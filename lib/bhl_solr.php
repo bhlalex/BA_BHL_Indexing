@@ -23,8 +23,12 @@ class BHLSolr {
 		$doc = new SolrInputDocument();
 
 		foreach ($fields as $key => $value)
-		{
-			$doc->addField($key, $value);			
+		{			
+			$values = explode(SPLIT_PATTERN, $value);
+			foreach ($values as $val) {
+				$doc->addField($key, $val);
+			}
+			
 		}
 		
 		$updateResponse = $this->client->addDocument($doc);		

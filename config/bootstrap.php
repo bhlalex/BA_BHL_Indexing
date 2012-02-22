@@ -34,4 +34,7 @@ define('SOLR_SSL_CAINFO', 'certs/cacert.crt');
 /* Name of directory holding multiple CA certificates to verify peer with */
 define('SOLR_SSL_CAPATH', 'certs/');
 
+
+define('SPLIT_PATTERN', '=+=+=+=+=+=+=+')
+
 ?>

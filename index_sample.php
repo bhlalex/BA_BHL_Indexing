@@ -6,7 +6,7 @@ include "lib/bhl_indexer.php";
 include "lib/csv_import.php";
 
 # csv file path
-$file_path = 'csv/BHL_100.csv';
+$file_path = 'csv/BHL_10.csv';
 
 
 # getting file content
